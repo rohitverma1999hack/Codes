@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<vector<int > > v;
+int v[10001][10001];
 
 int LCSS(string s,string p,int n,int m){
 	int maxx=0;
@@ -24,8 +24,6 @@ int main(){
 	string p="abfce";
 	int n=s.size();
 	int m=p.size();
-
-	v.resize(n+1,vector<int>(m+1));
 
 	for(int i=0;i<n+1;i++){
 		for(int j=0;j<m+1;j++){
