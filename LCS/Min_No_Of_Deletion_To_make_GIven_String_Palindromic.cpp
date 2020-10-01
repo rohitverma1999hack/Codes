@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<vector<int> > v;
+int v[10001][10001];
 
 int Min_Del(string s,string p,int n){
 	for(int i=1;i<n+1;i++){
@@ -18,7 +18,6 @@ int main(){
 	string p=s;
 	reverse(p.begin(),p.end());
 	int n=s.size();
-	v.resize(n+1,vector<int>(n+1));
 	for(int i=0;i<n+1;i++){
 		for(int j=0;j<n+1;j++){
 			if(i==0 || j==0) v[i][j]=0;
